@@ -10,20 +10,16 @@ class Spotatui < Formula
   version "0.35.5"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-aarch64.tar.gz"
-      sha256 "b2d48e56cdf972480f1faabe086f2e7fbd61df77ccbb5e70079794759e119142"
-    end
-    on_intel do
-      url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-x86_64.tar.gz"
-      sha256 "46c35012b79a263249a6a708085295412b03c60b1705e26f5b3e247c4f23e332"
-    end
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-aarch64.tar.gz"
+    sha256 "b2d48e56cdf972480f1faabe086f2e7fbd61df77ccbb5e70079794759e119142"
   end
 
-  on_linux do
-    url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-linux-x86_64.tar.gz"
-    sha256 "b66084d9c4c18a25e5a8d8ac949b1a98a4d319f8c32152e22fca1c735541825f"
+  on_intel do
+    url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-x86_64.tar.gz"
+    sha256 "46c35012b79a263249a6a708085295412b03c60b1705e26f5b3e247c4f23e332"
   end
 
   def install
