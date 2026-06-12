@@ -7,7 +7,7 @@
 class Spotatui < Formula
   desc "Spotify client for the terminal written in Rust, powered by Ratatui"
   homepage "https://github.com/LargeModGames/spotatui"
-  version "0.38.6"
+  version "0.39.0"
   license "MIT"
 
   depends_on :macos
@@ -16,12 +16,12 @@ class Spotatui < Formula
 
   on_arm do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-aarch64.tar.gz"
-    sha256 "4194bec88568fe17a2cd165bdf3e415988f11fb6a12e865005cea421c4a70be9"
+    sha256 "2edc39a6c2aa53c665d06dff0a3d1024f4267d6a9aa78ec54c19511715369085"
   end
 
   on_intel do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-x86_64.tar.gz"
-    sha256 "5a014141f39333868623469074ff80eaafa5eed0ad99d0485d2198b0f530ff9d"
+    sha256 "308534c3767a4723712b37ec73175cfc0d4f5c9a27bf514d85237b387e2c6f37"
   end
 
   def install
