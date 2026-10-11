@@ -7,7 +7,7 @@
 class Spotatui < Formula
   desc "Spotify client for the terminal written in Rust, powered by Ratatui"
   homepage "https://github.com/LargeModGames/spotatui"
-  version "0.43.0"
+  version "0.44.0"
   license "MIT"
 
   depends_on :macos
@@ -16,12 +16,12 @@ class Spotatui < Formula
 
   on_arm do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-aarch64.tar.gz"
-    sha256 "760f70176995376eac3eec92a62f363172348d13f1bf0891c07f3bd42324ce84"
+    sha256 "a9e91860c42519c5e71a4f9b465e8408b21f327cd3cadfb48d28da0d080ec709"
   end
 
   on_intel do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-x86_64.tar.gz"
-    sha256 "2213fceb386dfc7f7131beddf59f4b44af2f400513f9f37d73f944aebd63c63d"
+    sha256 "bba95a4a6596659d15e9596b75312d3be2cefb0c844cc07f15f3f04a5b6ffe22"
   end
 
   def install
@@ -30,10 +30,9 @@ class Spotatui < Formula
 
   def caveats
     <<~EOS
-      To use spotatui, you need a Spotify Premium account and must set up
-      Spotify API credentials. Run `spotatui` for first-time setup instructions.
+      Spotify in spotatui needs a Spotify Premium account. Run `spotatui`,
+      pick Spotify, and confirm the code it shows on Spotify's pairing page.
 
-      For native streaming support, ensure you have a Spotify Premium subscription.
       Note: Native streaming on macOS requires 'portaudio' (installed as a dependency).
 
       More info: https://github.com/LargeModGames/spotatui
