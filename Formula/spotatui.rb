@@ -5,9 +5,9 @@
 # Manual changes will be overwritten.
 
 class Spotatui < Formula
-  desc "Spotify client for the terminal written in Rust, powered by Ratatui"
-  homepage "https://github.com/LargeModGames/spotatui"
-  version "0.45.0"
+  desc "Terminal music player for Spotify, local files, Subsonic, radio, YouTube, Qobuz"
+  homepage "https://spotatui.com"
+  version "0.46.0"
   license "MIT"
 
   depends_on :macos
@@ -16,12 +16,12 @@ class Spotatui < Formula
 
   on_arm do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-aarch64.tar.gz"
-    sha256 "9b81db4c3904080e20a74ba5376320c1d0f000d033bf64ee89a2a497d68d9d0b"
+    sha256 "180bb9dc36b10acc2c4d1bf70045efc904341fa73b3a63e1b4cd756a5242032d"
   end
 
   on_intel do
     url "https://github.com/LargeModGames/spotatui/releases/download/v#{version}/spotatui-macos-x86_64.tar.gz"
-    sha256 "2b022a43487c9c6a6ee9c02ee5147c9725f2cce23b6c3396e88dcf21ba6ae50e"
+    sha256 "446fe3bb56cbda3cc03f5773fe5d1e78a23e1dd2eba0b32776796bf64490fd16"
   end
 
   def install
